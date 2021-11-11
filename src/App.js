@@ -1,11 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Line from './components/Line'
+import Navbar from './components/Navbar'
+import ToggleNavbarItem from './components/ToggleNavbarItem'
 
 function App() {
+  const pfeffer = "Nuss";
   return (
-    <div className="App">
+    <div className="App main-container">
+    <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+       <Header />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <Line color='white' text={pfeffer} />
       </header>
     </div>
   );
